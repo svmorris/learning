@@ -1,0 +1,13 @@
+#/bin/bash
+echo -e "compiling code:"
+printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
+g++-10 -std=c++2a -pthread  -O2 -Wall -Wextra -pedantic -pthread -pedantic-errors ls.cpp -lm  -latomic -lstdc++fs
+
+if [ $? != 0 ]
+then
+    exit
+fi
+
+echo -e "\n\n\n\n\n\nrunning code:"
+printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
+./a.out $@

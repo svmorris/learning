@@ -1,0 +1,13 @@
+#/bin/bash
+echo -e "compiling code:"
+printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
+g++ cat.cpp
+
+if [ $? != 0 ]
+then
+    exit
+fi
+
+echo -e "\n\n\n\n\n\nrunning code:"
+printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
+./a.out
