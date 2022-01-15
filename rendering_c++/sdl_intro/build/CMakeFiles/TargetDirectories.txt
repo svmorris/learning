@@ -1,3 +1,0 @@
-/home/antone/Music/learning/rendering_c++/sdl_intro/build/CMakeFiles/framework.dir
-/home/antone/Music/learning/rendering_c++/sdl_intro/build/CMakeFiles/edit_cache.dir
-/home/antone/Music/learning/rendering_c++/sdl_intro/build/CMakeFiles/rebuild_cache.dir
