@@ -1,5 +1,5 @@
 CMakeFiles/main.dir/main.cpp.o: \
- /home/antone/Music/learning/rendering_c++/sdl_intro/screensaver/main.cpp \
+ /home/antone/Music/learning/rendering_c++/sdl2/screensaver/main.cpp \
  /usr/include/stdc-predef.h /usr/include/SDL2/SDL.h \
  /usr/include/SDL2/SDL_main.h /usr/include/SDL2/SDL_stdinc.h \
  /usr/include/SDL2/SDL_config.h /usr/include/SDL2/SDL_platform.h \

@@ -1,4 +1,4 @@
-# Install script for directory: /home/antone/Music/learning/rendering_c++/sdl2/screensaver
+# Install script for directory: /home/antone/Music/learning/rendering_c++/sdl2/assets
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/antone/Music/learning/rendering_c++/sdl2/screensaver/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/antone/Music/learning/rendering_c++/sdl2/assets/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
