@@ -18,6 +18,7 @@ public:
     {
         _read();
         _verify();
+        _get_repored_size();
     }
 
     ~AssetPNG()
@@ -30,8 +31,8 @@ public:
 
 
 private:
-    int asset_size_x;
-    int asset_size_y;
+    int box_size_x;
+    int box_size_y;
     std::string file_path;
     std::vector<unsigned char> *buffer;
 
@@ -64,6 +65,33 @@ private:
             exit(EINVAL);
         }
     }
+
+
+    /*
+     * Get the size of the png file, as reported
+     * by the png headers.
+     *
+     * Function loops over the contents of
+     * the file until it finds the IHDR string.
+     * When it does, it takes the next 2 4byte
+     * big-endian numbers which will be the
+     * pixel sizes of the image.
+     * The reported size is put into variables
+     * box_size_x and y.
+     */
+    void _get_repored_size()
+    {
+        for (int i = 0; i < buffer->size(); i++)
+        {
+            if((*buffer)[i] == 'I')
+            {
+                printf("chunk name: %c%c%c%c\n", (*buffer)[i], (*buffer)[i+1], (*buffer)[i+2], (*buffer)[i+3]);
+                printf("size x: %x%x%x%x", (*buffer)[i+4], (*buffer)[i+5], (*buffer)[i+6], (*buffer)[i+8]);
+                return;
+            }
+        }
+    }
+
 };
 
 
