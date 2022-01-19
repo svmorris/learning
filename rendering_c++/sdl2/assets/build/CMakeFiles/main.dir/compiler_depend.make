@@ -199,8 +199,15 @@ CMakeFiles/main.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/basic_file.h \
   /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++io.h \
   /usr/include/c++/11.1.0/bits/fstream.tcc \
-  /usr/include/c++/11.1.0/iostream
+  /usr/include/c++/11.1.0/iostream \
+  /usr/include/c++/11.1.0/cstring \
+  /usr/include/string.h \
+  /usr/include/strings.h
 
+
+/usr/include/strings.h:
+
+/usr/include/string.h:
 
 /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++io.h:
 
@@ -495,6 +502,8 @@ CMakeFiles/main.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/11.1.0/ext/new_allocator.h:
 
 /usr/include/c++/11.1.0/bits/localefwd.h:
+
+/usr/include/c++/11.1.0/cstring:
 
 /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++locale.h:
 
