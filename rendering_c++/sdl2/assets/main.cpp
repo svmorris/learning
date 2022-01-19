@@ -51,6 +51,11 @@ private:
         fd.close();
     }
 
+    /*
+     * Function checks file-magic
+     * to make sure the file loaded
+     * is a PNG
+     */
     void _verify()
     {
         if ((*buffer)[1] != 'P' || (*buffer)[2] != 'N' || (*buffer)[3] != 'G')
